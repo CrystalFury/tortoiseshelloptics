@@ -81,7 +81,6 @@ header .container {
 .headline {
   position: relative;
   top: 10rem;
-  width: 34rem;
   background-color: white;
 }
 
@@ -143,6 +142,7 @@ footer {
 footer .container {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: azure;
   padding: 4rem;
 }
@@ -150,4 +150,100 @@ footer .container {
 footer img {
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 975px) {
+
+  .container {
+    max-width: 100%;
+  }
+
+  header {
+    height: 22rem;
+  }
+
+  header .container {
+    top: 0;
+  }
+
+  .headline {
+    top: 5rem;
+    right: 2rem;
+  }
+
+  .headline h1 {
+    padding: 1.5rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+
+  .company span {
+    display: none;
+  }
+
+  header {
+    height: 22rem;
+    background-position: 20%;
+  }
+
+  .headline {
+    top: 9rem;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .headline h1 {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    margin-top: 3.77rem;
+  }
+
+  .feature {
+    width: 100%;
+    margin-top: 1.54rem;
+  }
+
+  .all-content {
+    display: block;
+    margin: 3.77rem 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 4rem 0;
+    border: 1px solid black;
+  }
+
+  .title {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer img {
+    margin; 0;
+  }
 }
